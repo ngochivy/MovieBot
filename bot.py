@@ -3,10 +3,11 @@ from discord import app_commands
 import aiohttp
 import re
 import sqlite3
-
+import os
 # ================= CẤU HÌNH CỦA BẠN =================
-DISCORD_TOKEN = "MTU3NTQwNTkzMTAxMjAzODc3Nw.GviHbv.kVVvt51oPu7N4RxMwOtrnydW_d3eS-_b-OVKMA"
-OMDB_API_KEY = "2b8633c3"
+
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+OMDB_API_KEY = os.getenv("OMDB_API_KEY")
 # ====================================================
 
 # Tạo cơ sở dữ liệu lưu điểm của server
